@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutterfire_ui/auth.dart';
 import 'package:page_indicator/page_indicator.dart';
 
+const googleClientId =
+    '500294587338-12ggnut1m43a2h9lhkespgf6kdtjtrng.apps.googleusercontent.com';
+const facebookClientId = 'your-facebook-client-id';
+
 class IntroPager extends StatelessWidget {
   final textprueba = 'Hola';
   const IntroPager({super.key});
@@ -15,12 +19,12 @@ class IntroPager extends StatelessWidget {
       indicatorSelectorColor: Colors.black,
       child: PageView(
         children: [
-          // const _DescripcionPage(
-          //     text: 'textprueba', imagePath: 'assets/img/burger.png'),
-          // const _DescripcionPage(
-          //     text: 'Second', imagePath: 'assets/img/burger.png'),
-          // const _DescripcionPage(
-          //     text: 'Third', imagePath: 'assets/img/burger.png'),
+          const _DescripcionPage(
+              text: 'textprueba', imagePath: 'assets/img/burger.png'),
+          const _DescripcionPage(
+              text: 'Second', imagePath: 'assets/img/burger.png'),
+          const _DescripcionPage(
+              text: 'Third', imagePath: 'assets/img/burger.png'),
           _LoginScreen()
         ],
       ),
@@ -68,7 +72,11 @@ class _LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const SignInScreen(
-      providerConfigs: [EmailProviderConfiguration()],
+      providerConfigs: [
+        EmailProviderConfiguration(),
+        GoogleProviderConfiguration(clientId: googleClientId),
+        FacebookProviderConfiguration(clientId: facebookClientId),
+      ],
     );
   }
 }
