@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "500294587338",
+    "project_id": "app-suntec",
+    "storage_bucket": "app-suntec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:500294587338:android:8702879cffcda93ceeb533",
+        "android_client_info": {
+          "package_name": "com.example.app_suntec"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "500294587338-12ggnut1m43a2h9lhkespgf6kdtjtrng.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8nCQJP7zaGSxWAb96435CY6YG7QbK0U4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "500294587338-12ggnut1m43a2h9lhkespgf6kdtjtrng.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
