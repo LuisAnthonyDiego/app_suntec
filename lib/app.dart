@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:app_suntec/Cubits/auth_cubit.dart';
+import 'package:app_suntec/cubits/auth_cubit.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'navigation/routes.dart';

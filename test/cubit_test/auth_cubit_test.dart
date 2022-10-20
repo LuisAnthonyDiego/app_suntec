@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:app_suntec/Cubits/auth_cubit.dart';
+import 'package:app_suntec/cubits/auth_cubit.dart';
 import 'package:app_suntec/main.dart';
 import 'package:app_suntec/repository/auth_repository.dart';
 import 'package:bloc_test/bloc_test.dart';
