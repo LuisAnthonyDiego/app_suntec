@@ -6,9 +6,8 @@ const googleClientId =
     '500294587338-12ggnut1m43a2h9lhkespgf6kdtjtrng.apps.googleusercontent.com';
 const facebookClientId = 'your-facebook-client-id';
 
-class IntroPager extends StatelessWidget {
-  final textprueba = 'Hola';
-  const IntroPager({super.key});
+class IntroScreenBody extends StatelessWidget {
+  const IntroScreenBody({super.key});
   @override
   Widget build(BuildContext context) {
     return PageIndicatorContainer(
@@ -19,11 +18,11 @@ class IntroPager extends StatelessWidget {
       indicatorSelectorColor: Colors.black,
       child: PageView(
         children: [
-          const _DescripcionPage(
-              text: 'textprueba', imagePath: 'assets/img/burger.png'),
-          const _DescripcionPage(
+          const _DescripcionScreen(
+              text: 'Suntec', imagePath: 'assets/img/burger.png'),
+          const _DescripcionScreen(
               text: 'Second', imagePath: 'assets/img/burger.png'),
-          const _DescripcionPage(
+          const _DescripcionScreen(
               text: 'Third', imagePath: 'assets/img/burger.png'),
           _LoginScreen()
         ],
@@ -32,11 +31,11 @@ class IntroPager extends StatelessWidget {
   }
 }
 
-class _DescripcionPage extends StatelessWidget {
+class _DescripcionScreen extends StatelessWidget {
   final String text;
   final String imagePath;
 
-  const _DescripcionPage({
+  const _DescripcionScreen({
     required this.text,
     required this.imagePath,
   });
@@ -68,6 +67,7 @@ class _DescripcionPage extends StatelessWidget {
   }
 }
 
+//
 class _LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {

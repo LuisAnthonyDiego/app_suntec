@@ -1,9 +1,9 @@
-import 'package:app_suntec/ui/intro_screen.dart';
-import 'package:app_suntec/ui/splash_screen.dart';
+import 'package:app_suntec/ui/screen/intro_screen.dart';
+import 'package:app_suntec/ui/screen/splash_screen.dart';
 //import 'package:app_suntec/ui/splash_screen.dart';
 import 'package:flutter/material.dart';
 
-import '../ui/home_screen.dart';
+import '../ui/screen/home_screen.dart';
 
 class Routes {
   static const splash = '/';

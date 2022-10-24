@@ -1,15 +1,15 @@
-import 'package:app_suntec/cubits/auth_cubit.dart';
-import 'package:app_suntec/app.dart';
 import 'package:app_suntec/data_source/firebase_datasource.dart';
+import 'package:app_suntec/firebase_options.dart';
 import 'package:app_suntec/repository/auth_repository.dart';
+import 'package:app_suntec/repository/user_repository.dart';
 import 'package:app_suntec/repository/implementation/auth_repository.dart';
 import 'package:app_suntec/repository/implementation/user_repository.dart';
-import 'package:app_suntec/repository/user_repository.dart';
-import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'package:app_suntec/firebase_options.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:get_it/get_it.dart';
+import 'app.dart';
+import 'cubits/auth_cubit.dart';
 
 final getIt = GetIt.instance;
 void main() async {
