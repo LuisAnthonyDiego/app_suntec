@@ -1,13 +1,13 @@
 import 'package:app_suntec/theme/app_theme.dart';
-import 'package:app_suntec/ui/screen/components/category_widget.dart';
-import 'package:app_suntec/ui/screen/components/product_card_widget.dart';
+import 'package:app_suntec/ui/screen/components_home/category_widget.dart';
+import 'package:app_suntec/ui/screen/components_home/product_card_widget.dart';
+import 'package:app_suntec/ui/screen/details_screen.dart';
 import 'package:flutter/material.dart';
 import '../../model/model_products.dart';
-import '../screen/components/search_widget.dart';
+import '../screen/components_home/search_widget.dart';
 
-class Body extends StatelessWidget {
-  const Body({super.key});
-
+class HomeBody extends StatelessWidget {
+  const HomeBody({super.key});
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -26,7 +26,7 @@ class Body extends StatelessWidget {
             Container(
               margin: const EdgeInsets.only(top: 70.0),
               decoration: const BoxDecoration(
-                  color: Colors.redAccent,
+                  color: AppTheme.primary,
                   borderRadius: BorderRadius.only(
                       topLeft: Radius.circular(40.0),
                       topRight: Radius.circular(40.0))),
@@ -36,6 +36,14 @@ class Body extends StatelessWidget {
                 itemBuilder: (context, index) => ProductCard(
                       itemindex: index,
                       product: products[index],
+                      press: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => DetailsScreen(
+                                      product: products[index],
+                                    )));
+                      },
                     ))
           ],
         ))

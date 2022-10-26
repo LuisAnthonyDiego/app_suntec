@@ -10,7 +10,7 @@ class CategoryList extends StatefulWidget {
 
 class _CategoryListState extends State<CategoryList> {
   int selectedIndex = 0;
-  List categories = ['All', 'Baja tensión', 'Media tensión', 'Alta tensión'];
+  List categories = ['All', 'Alitas', 'Pollo', 'Pizzas', 'Hamburguesas'];
 
   @override
   Widget build(BuildContext context) {
@@ -39,7 +39,7 @@ class _CategoryListState extends State<CategoryList> {
                 borderRadius: BorderRadius.circular(6)),
             child: Text(
               categories[index],
-              style: const TextStyle(color: Colors.white),
+              style: fontsCategory,
             ),
           ),
         ),

@@ -6,6 +6,6 @@ class IntroScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(body: IntroScreenBody());
+    return const Scaffold(body: IntroBody());
   }
 }

@@ -1,10 +1,10 @@
 class Product {
-  final int id, price;
-  final String title, description, image;
+  final int id;
+  final String title, description, image, category;
 
   Product(
       {required this.id,
-      required this.price,
+      required this.category,
       required this.title,
       required this.description,
       required this.image});
@@ -15,7 +15,7 @@ class Product {
 List<Product> products = [
   Product(
     id: 1,
-    price: 56,
+    category: 'M',
     title: "Hamburguesa Clásica",
     image: "assets/img/burger.png",
     description:
@@ -23,7 +23,7 @@ List<Product> products = [
   ),
   Product(
     id: 4,
-    price: 68,
+    category: 'A',
     title: "Salchipapa",
     image: "assets/img/burger.png",
     description:
@@ -31,7 +31,7 @@ List<Product> products = [
   ),
   Product(
     id: 9,
-    price: 39,
+    category: 'B',
     title: "BBQ",
     image: "assets/img/burger.png",
     description:
@@ -39,7 +39,7 @@ List<Product> products = [
   ),
   Product(
     id: 9,
-    price: 39,
+    category: 'A',
     title: "Alitas Buffalo",
     image: "assets/img/burger.png",
     description:

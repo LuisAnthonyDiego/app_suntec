@@ -6,8 +6,8 @@ const googleClientId =
     '500294587338-12ggnut1m43a2h9lhkespgf6kdtjtrng.apps.googleusercontent.com';
 const facebookClientId = 'your-facebook-client-id';
 
-class IntroScreenBody extends StatelessWidget {
-  const IntroScreenBody({super.key});
+class IntroBody extends StatelessWidget {
+  const IntroBody({super.key});
   @override
   Widget build(BuildContext context) {
     return PageIndicatorContainer(
