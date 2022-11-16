@@ -3,7 +3,7 @@ import 'package:app_suntec/ui/screen/splash_screen.dart';
 //import 'package:app_suntec/ui/splash_screen.dart';
 import 'package:flutter/material.dart';
 
-import '../ui/screen/home_screen.dart';
+import '../ui/client/screen/home_screen.dart';
 
 class Routes {
   static const splash = '/';
@@ -21,7 +21,7 @@ class Routes {
       case intro:
         return buildRoute(const IntroScreen());
       case home:
-        return buildRoute(const HomeScreen());
+        return buildRoute(const HomeScreenC());
       default:
         throw Exception('La ruta no existe');
     }

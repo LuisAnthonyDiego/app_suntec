@@ -29,3 +29,14 @@ final fontsPrice = GoogleFonts.secularOne(
 
 //Fonts Description
 final fontsDetailsDescription = GoogleFonts.varelaRound(color: Colors.white);
+
+//CLIENTE UI FONTS
+
+final fontsTitleC = GoogleFonts.poppins(color: Colors.white, fontSize: 45);
+
+//Fonts Item_tile
+
+final fontsTileT = GoogleFonts.aclonica(
+  fontSize: 20.0,
+);
+final fontsTileST = GoogleFonts.aclonica(color: Colors.white54);

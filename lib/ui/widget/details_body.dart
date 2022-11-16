@@ -2,7 +2,7 @@ import 'package:app_suntec/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 
 import '../../model/model_products.dart';
-import '../screen/componentas_details/product_image_widget.dart';
+import '../screen/components_details/product_image_widget.dart';
 
 class DetailsBody extends StatelessWidget {
   const DetailsBody({super.key, required this.product});
@@ -38,7 +38,7 @@ class DetailsBody extends StatelessWidget {
                   style: fontsTitleCard,
                 ),
               ),
-              Text('\$${product.category}', style: fontsPrice),
+              Text(product.category, style: fontsPrice),
               Padding(
                 padding:
                     const EdgeInsets.symmetric(vertical: sDefaultPadding / 2),

@@ -5,9 +5,12 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:app_suntec/theme/app_theme.dart';
 import 'package:app_suntec/ui/widget/details_body.dart';
 
+import 'components_details/botton_widget.dart';
+
 class DetailsScreen extends StatelessWidget {
   const DetailsScreen({super.key, required this.product});
   final Product product;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -23,9 +26,15 @@ class DetailsScreen extends StatelessWidget {
         ),
         title: Text('Details Screen'.toUpperCase(), style: fontsTitle),
       ),
-      body: DetailsBody(
-        product: product,
-      ),
+      body: Stack(children: [
+        DetailsBody(
+          product: product,
+        ),
+        const SizedBox(
+          height: 10.0,
+        ),
+        const BottonDetails()
+      ]),
     );
   }
 }
